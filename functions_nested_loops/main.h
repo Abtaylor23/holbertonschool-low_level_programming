@@ -1,4 +1,4 @@
-#ifindef HEADER
+#ifndef HEADER
 #define HEADER
 
 int _putchar(char);
