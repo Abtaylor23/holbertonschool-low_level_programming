@@ -2,4 +2,5 @@
 #define HEADER
 
 int _putchar(char);
-#endif
+void print_alphabet(void);
+#endif 
