@@ -6,7 +6,7 @@
  * Return: (1) for true (0) faulse
  *
  */
-int _isupper (int c)
+int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
