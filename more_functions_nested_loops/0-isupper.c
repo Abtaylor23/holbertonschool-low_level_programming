@@ -3,7 +3,6 @@
  * _isupper - detect upper alphabets
  *
  * @a: input character
- *
  * Return: (1) for true (0) faulse
  *
  */
