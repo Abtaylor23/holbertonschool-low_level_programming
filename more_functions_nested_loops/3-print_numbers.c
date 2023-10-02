@@ -13,7 +13,7 @@ void print_numbers(void)
 
 	for (x = 0; x <= 9; x++)
 	{
-	:wqputchar(x = '0' );
+	putchar(x = '0' );
 	}
 	putchar('\n');
 }
