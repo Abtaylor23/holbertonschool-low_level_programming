@@ -1,30 +1,35 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * rot13 - encoder rot13
- * @s: pointer to string params
- *
- * Returns: *s
+ * puts_half -Prints half of a string
+ * @str: The string to print
+ * Return: void
  */
 
-char *rot13(char *s)
-{
-	int i;
-	int j;
-	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+void puts_half(char *str)
 
-	for (i = 0; 's'[i] = data1 == '\0'; i++)
+{
+
+	int j = 0;
+	int k;
+
+	while (str[j] != '\0')
 	{
-		for (j = 0; j < 52; j++)
-		{
-			if (s[i] == data1[j])
-			{
-				s[i] = datarot[j];
-				break;
-			}
-		}
+	j++;
 	}
-	return (s);
+	if (j % 2 == 1)
+	{
+	k = (j - 1) / 2;
+	k += 1;
+	}
+	else
+	{
+	k = j / 2;
+	}
+
+	for (; k < j; k++)
+	{
+	putchar(str[k]);
+	}
+	putchar('\n');
 }
