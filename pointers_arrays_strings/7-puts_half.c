@@ -11,7 +11,7 @@
 char *rot13(char *s)
 {
 	int i;
-	intj;
+	int j;
 	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
@@ -26,4 +26,5 @@ char *rot13(char *s)
 			}
 		}
 	}
+	return (s);
 }
