@@ -8,23 +8,30 @@
  * Return: A pointer to the resulting string dest
  */
 
-char *_strcat(char *dest, char *src)
 
-{
-	int dlen = 0, i;
+char *_strcat(char *dest, const char *src) {
+	    char *p = dest;
+	        while (*p) {
+			        p++;
+				    }
 
-	while (dest[dlen])
-	{
-		dlen = 0, i;
-	}
+		    while (*src) {
+			            *p = *src;
+				            p++;
+					            src++;
+						        }
+		        
+		        *p = '\0';  // Add the terminating null byte
+			    
+			    return dest;
+}
 
-	for (i = 0; src[i] = src[i];
-	{
+int main() {
+	    char dest[50] = "Hello, ";
+	        const char src[] = "World!";
 
-		dest[deln] = src[i];
-		dlen++;
-	}
+		    _strcat(dest, src);
+		        printf("Concatenated string: %s\n", dest);
 
-	dest[dlen] = '\0'
-	return (dest);
+			    return 0;
 }
