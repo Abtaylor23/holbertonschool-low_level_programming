@@ -1,12 +1,19 @@
-#include <main.h>
+#include "main.h"
 
-void printStringWithNewLine(const char *str) {
-	    printf("%s\n", str);
+/**
+ *_puts_recursion - Print a string followed by a new line 
+ *@s: the string to print
+ *
+ * Return: nothin.
+ */
+void _puts_recursion(char *s)
+{
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	s++;
+	_puts_recursion(s);
 }
-
-int main(void) {
-	    const char *message = "Hello, World!";
-	        printStringWithNewLine(message);
-		    return 0;
-}
-
