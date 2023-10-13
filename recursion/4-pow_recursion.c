@@ -9,11 +9,19 @@
  */
 int _pow_recursion(int x, int y)
 {
-	if (y < 0)
-		return (-1);
-
-	if (y < 0)
+	// Base Case: If the exponet is 0, return 1.
+	if (y == 0) {
 		return (1);
+	}
 
-	return (x * _pow_recursion(x, y - 1));
+	// Handle the case where y is negative.
+	if (y < 0)
+		// You can return an error vaule or handle it according to your requirements.
+		return -1,
 }
+	// Recursive Case: Multiply x by the result of (_pow_recursion(x, y - 1) 
+	return x * _pow_recursion(x, y - 1)
+}
+
+	
+
