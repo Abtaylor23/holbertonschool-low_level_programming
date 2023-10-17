@@ -10,8 +10,8 @@
 int main(void)
 
 {
-	char s1[98] = "hello"
-	char s2[] = "world!\n"
+	char s1[98] = "hello";
+	char s2[] = "world!\n";
 	char *ptr;
 
 	printf("%s\n", s1);
