@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * __strcpy - Copy a string
+ * _strcpy - Copy a string
  * @dest: Destination value
  * @src: Source vaule
  * Return: the pointerr to dest
