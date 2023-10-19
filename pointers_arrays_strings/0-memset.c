@@ -3,9 +3,9 @@
 
 /**
  * _memset - Entry point
- * @dest: input
- * @src: input
- * @n: input
+ * @s: pointed destion
+ * @b: contant byte
+ * @n: bytes
  * Return: Always 0 (Success)
  */
 
@@ -14,7 +14,7 @@ char *_memset(char *s, char b, unsigned int n);
 	unsigned int i; 
 
 	for (i  = 0; i < n; i++)
-		dest[i] = src[i];
+		s[i] = b;
 
-	return (dest);
+	return (s);
 }
