@@ -1,10 +1,19 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
-
+/**
+ * _isupper - detect upper alphabets
+ *
+ * @c: input character
+ * Return: (1) for true (0) faulse
+ *
+ */
 int _isupper(int c)
 {
-	    return (c >= 'A' && c <= 'Z');
+		if (c >= 'A' && c <= 'Z')
+		{
+			return (1);
+		}
+		else
+		{
+			return (0);
+		}
 }
