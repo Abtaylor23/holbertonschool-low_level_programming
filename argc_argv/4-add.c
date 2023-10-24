@@ -30,10 +30,13 @@ int main(int argc, char *argv[])
 					printf("Error\n");
 					return (1);
 				}
+			}
+
+			sum += atoi(e);
+			e++;
 		}
 
-		sum += atoi(e);
-		e++;
+		printf("%d\n", sum);
 	}
 	else
 	{
