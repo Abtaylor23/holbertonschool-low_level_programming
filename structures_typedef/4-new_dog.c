@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
 
@@ -5,19 +6,18 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 
 /**
- * new_dog - ...
- * @name: ...
- * @age: ...
- * @owner: ...
+ * new_dog - function that creates a new dog
+ * @name: passed from main
+ * @age: passed from main
  *
- * Return: ...
+ * Return: pointer to the struct
  */
-dog_t *new_dog(char *name, float age, char *owner)
+dog_ *new_dog(char *name, float age, char *owner)
 {
 	dog_t *max_dog;
 	int name_l = 0, own_l = 0;
 
-	if (name != NULL && owner != NULL)	
+	if (name != NULL && owner != NULL)
 	{
 		name_l = _strlen(name) + 1;
 		own_l = _strlen(owner) + 1;
@@ -25,26 +25,34 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 		if (max_dog == NULL)
 			return (NULL);
+		
+		max_dog->name = malloc(sizeof(char) * name_l);
 
-		max_dog->name = malloc(sizeof(char) *own_l);
-	{
+		if (max_dog->name == NULL)
+		{
+			free(max_dog);
+			return (NULL);
+		}
+
+		max_dog->owner = malloc(sizeof(char) * own_l);
+
 		if (max_dog->owner == NULL)
 		{
 			free(max_dog->name);
 			free(max_dog);
 			return (NULL);
-	}
+		}
 
-	max_dog->name = _strcpy(max_dog->name, name);
-	max_dog->owner = _strcpy(max_dog->owner, owner);
-	max_dog->age = age;
+		max_dog->name = _strcpy(max_dog->name, name);
+		max_dog->owner = _strcpy(max_dog->owner, owner);
+		max_dog->age = age;
 	}
 
 	return (max_dog);
 }
 
 /**
- * _strlen - Returns the length of a string
+ * _strlen - Return the length of a string
  * @s: String to count
  *
  * Return: String length
@@ -59,12 +67,13 @@ int _strlen(char *s)
 	}
 
 	return (c);
+
 }
 
 /**
  * _strcpy - Copy a string
- * @dest: Destination vaule
- * @src: Source vaule
+ * @dest: Destination value
+ * @src: Source value
  *
  * Return: the pointer to dest
  */
@@ -80,5 +89,4 @@ char *_strcpy(char *dest, char *src)
 	dest[i++] = '\0';
 
 	return (dest);
-}	
-			
+}
