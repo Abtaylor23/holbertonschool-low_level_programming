@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void init_dog(struct dog *d, char *name, float age, char *owner);
 {
 	    struct dog my_dog;
 
