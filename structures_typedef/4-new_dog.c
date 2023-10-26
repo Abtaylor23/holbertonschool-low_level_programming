@@ -20,7 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (name_l != NULL && owner_l != NULL)
 	{
 		name_l = _strlen(name) + 1;
-		own_l = _strlen(owner) + 1;
+		owner_l = _strlen(owner) + 1;
 		max_dog = malloc(sizeof(dog_t));
 
 	if (max_dog == NULL)
