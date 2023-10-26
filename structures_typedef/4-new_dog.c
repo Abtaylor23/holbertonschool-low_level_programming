@@ -9,6 +9,7 @@ char *_strcpy(char *dest, char *src);
  * new_dog - function that creates a new dog
  * @name: passed from main
  * @age: passed from main
+ * @owner: passed from main
  *
  * Return: pointer to the struct
  */
