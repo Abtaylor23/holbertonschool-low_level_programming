@@ -25,7 +25,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 		if (max_dog == NULL)
 			return (NULL);
-		
+
 		max_dog->name = malloc(sizeof(char) * name_l);
 
 		if (max_dog->name == NULL)
