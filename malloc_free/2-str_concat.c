@@ -9,6 +9,7 @@ i * str_concat - Concatenates two strings of any size
  *
  * Return: the two strings concatenated
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	int i = 0, j =0, k = 0, l = 0;
@@ -21,10 +22,10 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	while (s1[j])
+	while (s1[i])
 		j++;
 
-	while (s2[j])
+	while (s2[i])
 		j++;
 
 	l = i + j;
