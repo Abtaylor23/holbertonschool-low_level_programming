@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 /**
  * main - program to print the file name
  * Description: print file name from which file is compiled from
