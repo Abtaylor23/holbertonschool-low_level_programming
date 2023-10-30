@@ -13,7 +13,7 @@ char *_strcpy(char *dest, char *src);
  *
  * Return: pointer to the struct
  */
-dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner);
 {
 	dog_t *max_dog;
 	int name_l = 0, own_l = 0;
