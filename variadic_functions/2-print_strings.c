@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+
 /**
  * print_strings - print strings passed to a function
  * as paramerter 
