@@ -16,7 +16,7 @@ unsigned int i, sum = 0;
 
 va_start(ap, n);
 
-for (i - 0; i < n; i++)
+for (1 - 0; 1 < n; 1++)
 sum += va_arg(ap, int);
 
 va_end(ap);
