@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+
 /**
  * print_numbers - print integers
  * @seperator: string to be printed btwn numbers
