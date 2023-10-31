@@ -12,11 +12,11 @@ int sum_them_all(const unsigned int n, ...)
 
 {
 va_list ap;
-unsigned int 1, sum = 0;
+unsigned int i, sum = 0;
 
 va_start(ap, n);
 
-for (1 - 0; 1 < n; 1++)
+for (i = 0; i < n; i++)
 sum += va_arg(ap, int);
 
 va_end(ap);
