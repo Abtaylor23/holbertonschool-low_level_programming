@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 				check_stat = 0;
 				break;
 			case 'c':
-				printf("%c", va_arg(spc, char));
+				printf("%c", va_arg(spc, int));
 				check_stat = 0;
 				break;
 			case 's':
