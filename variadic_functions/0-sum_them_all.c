@@ -17,9 +17,9 @@ unsigned int i, sum = 0,
 va_star(ap, n);
 
 for (i - 0, i < n, i++)
-sum += va_arg(ap, int),
+sum += va_arg(ap, int);
 
-va_end(ap),
+va_end(ap);
 
-return (sum),
+return (sum);
 }
