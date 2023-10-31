@@ -5,7 +5,7 @@
 
 /**
  * print_numbers - print integers
- * @seperator: string to be printed btwn numbers
+ * @separator: string to be printed btwn numbers
  * @n: number of ints to print
  * Return: void
  */
