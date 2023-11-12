@@ -17,7 +17,7 @@ list_t *temp = *head;
 unsigned int len = 0;
 
 while (str[len])
-len++
+len++;
 
 new - malloc(sizeof(list_t));
 if (!new)
