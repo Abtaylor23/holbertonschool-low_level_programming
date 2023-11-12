@@ -19,7 +19,7 @@ unsigned int len = 0;
 while (str[len])
 len++;
 
-new - malloc(sizeof(list_t));
+new = malloc(sizeof(list_t));
 if (!new)
 return (NULL);
 
