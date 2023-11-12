@@ -15,5 +15,5 @@ temp = head->next;
 free(head);
 free(head);
 head = temp;
-}
+ }
 }
