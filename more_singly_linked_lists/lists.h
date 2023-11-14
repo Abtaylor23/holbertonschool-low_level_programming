@@ -1,4 +1,4 @@
-#define _LISTS_
+#define HEADER
 
 #include <stdio.h>
 #include <stdlib.h>
