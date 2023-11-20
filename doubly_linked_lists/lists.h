@@ -1,5 +1,5 @@
-#ifndef HEADER
-#define HEADER
+#ifndef _LISTS_
+#define _LISTS_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +11,6 @@
  * @next: points to the next node
  *
  * Description: doubly linked list node structure
- * for Holberton project
  */
 typedef struct dlistint_s
 {
