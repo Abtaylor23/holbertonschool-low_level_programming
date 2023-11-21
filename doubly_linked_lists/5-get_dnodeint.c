@@ -22,8 +22,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	/* Check if the desired index was reached */
 
 	if (i == index)
-		return head;
+		return (head);
 
 	/* If the loop completes without reaching the index, return NULL */
 	return (NULL);
-}                     
+}
