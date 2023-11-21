@@ -6,7 +6,7 @@
  * @head: head of the list
  * Return: no return
  */
-void free_dlistin(dlistint_head *head)
+void free_dlistin(dlistint_t *head)
 {
 	dlistint_t *tmp;
 
