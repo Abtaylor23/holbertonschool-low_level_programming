@@ -20,7 +20,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	}
 
 	// Check if the desired index was reached
-	if (i == index)
+	if (i == index -1)
+
 		return head;
 
 	// If the loop completes without reaching the index, return NULL
