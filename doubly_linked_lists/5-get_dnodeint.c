@@ -1,12 +1,11 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - returns the
- * nth node of a dlistint_t linked list
+ * get_dnodeint_at_index - returns the nth node of a dlistint_t linked list
  *
  * @head: head of the list
  * @index: index of the nth node
- * Return: nth node
+ * Return: nth node, or NULL if the node is not found
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
@@ -15,16 +14,15 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	if (head == NULL)
 		return (NULL);
 
-	while (head->prev != NULL)
-		head = head->prev;
-
-	i = 0;
-
-	while (head != NULL)
+	for (i = 0; i < index && head != NULL; i++)
 	{
-		if (i == index)
-			break;
 		head = head->next;
-		i++;
 	}
-}
+
+	// Check if the desired index was reached
+	if (i == index)
+		return head;
+
+	// If the loop completes without reaching the index, return NULL
+	return (NULL);
+}                     
